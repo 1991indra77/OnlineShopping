@@ -20,3 +20,8 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+#target folders contains the compiled classes. As I dont wanna upload the class files so ignoring the target folders of both the projects
+
+/onlineshopping/target/
+/shoppingbackend/target/
