@@ -34,12 +34,13 @@
 		</dependency>
 
 		<!--Hibernate Dependency -->
-		
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate-version}</version>
+
 		</dependency>
+
 
 		<!-- Database Connection Pool -->
 		<dependency>
@@ -49,6 +50,7 @@
 		</dependency>
 
 		<!-- Spring ORM -->
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
@@ -56,9 +58,8 @@
 
 		</dependency>
 
-
 		<!-- Oracle Dependencies -->
-		<!-- https://mvnrepository.com/artifact/com.github.noraui/ojdbc7 -->
+		
 		<dependency>
 			<groupId>com.github.noraui</groupId>
 			<artifactId>ojdbc7</artifactId>
