@@ -21,7 +21,6 @@
 <title>Online Shopping - ${title}</title>
 <script>
 	window.menu = ${title}
-	
 </script>
 
 <!-- Bootstrap Core CSS -->
@@ -53,6 +52,9 @@
 			</c:if>
 			<c:if test="${userClickContact==true}">
 				<%@include file="./contact.jsp"%>
+			</c:if>
+			<c:if test="${userClickShowAllProducts==true or userClickShowCategoryProducts==true}">
+				<%@include file="./listProducts.jsp"%>
 			</c:if>
 		</div>
 		
