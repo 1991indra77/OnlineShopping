@@ -32,7 +32,7 @@ public class CategoryTest {
 	{
 		//adding objects
 		category=new Category("Mobile", "This is Mobile Description", "Cat_1.jpg", 0);
-		assertEquals("successfully added",true,categoryDao.addCategory(category));
+		assertEquals("Successfully added",true,categoryDao.addCategory(category));
 		
 		category=new Category("Laptop", "This is laptop Description", "Cat_2.jpg", 0);
 		assertEquals("successfully added",true,categoryDao.addCategory(category));

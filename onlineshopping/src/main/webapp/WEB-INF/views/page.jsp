@@ -3,8 +3,6 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <spring:url value="/resources/js/" var="js" />
@@ -20,7 +18,8 @@
 
 <title>Online Shopping - ${title}</title>
 <script>
-	window.menu = ${title}
+	window.menu = '${title}';
+	window.contextRoot='${pageContext.request.contextPath}';
 </script>
 
 <!-- Bootstrap Core CSS -->
@@ -32,7 +31,8 @@
 <!-- Custom CSS -->
 <link href="${css}/bootstrap-custom-theme.css" rel="stylesheet">
 
-
+<!-- Data Table CSS -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
 </head>
 
@@ -67,6 +67,10 @@
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="${js}/bootstrap.min.js"></script>
+		
+		<!-- DataTables -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		<script src="${js}/dataTables.bootstrap.js"></script>
 
 		<!-- custom JS -->
 		<script src="${js}/myapp.js"></script>
